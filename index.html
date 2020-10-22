@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+    />
+
+    <!-- Noto Sans CDN -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>TO-DO 리스트</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1 class="title">TO-DO 리스트</h1>
+        <h3 class="subtitle">
+          1. 새로운 항목 추가 후 목록에 필터를 입력하여 필터링 할수있습니다.
+        </h3>
+        <div class="card">
+          <h3 class="card__title">항목 추가</h3>
+          <form id="form">
+            <div class="row">
+              <label for="taskInput">새로운 할일</label>
+              <input class="u-full-width" type="text" id="taskInput" />
+            </div>
+            <input class="button-primary" type="submit" value="추가하기" />
+          </form>
+          <hr />
+          <h4 class="card__sub-title">목록</h4>
+          <input
+            class="u-full-width"
+            type="text"
+            placeholder="필터"
+            id="filter"
+          />
+          <table id="table" class="u-full-width">
+            <tbody></tbody>
+          </table>
+          <input
+            id="clearBtn"
+            class="button-primary"
+            type="button"
+            value="전체 삭제"
+          />
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
